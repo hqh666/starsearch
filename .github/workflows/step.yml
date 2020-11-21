@@ -4,11 +4,8 @@ on:
    push:
    gollum:
    schedule:
-       - cron: '30 2 * * *'
-jobs:         
+       - cron: '30 2 * * *'        
          runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout codes'
-        uses: actions/checkout@v1
 - name: 'step-100000'
   run: bash ./step.sh
