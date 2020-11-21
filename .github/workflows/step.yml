@@ -4,8 +4,10 @@ on:
   schedule:
     - cron: '30 2 * * *'
 jobs:
-  bot:
+  step:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Get Weather'
+      - name: 'Checkout codes'
+        uses: actions/checkout@v1
+      - name: 'step-run'
         run: bash ./step.sh
