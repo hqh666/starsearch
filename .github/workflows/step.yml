@@ -3,12 +3,9 @@ on:
   push:
   schedule:
     - cron: '30 2 * * *'
-
 jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout codes'
-        uses: actions/checkout@v1
       - name: 'Get Weather'
         run: bash ./step.sh
