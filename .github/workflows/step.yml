@@ -5,10 +5,10 @@ on:
    gollum:
    schedule:
        - cron: '30 2 * * *'
-         
+jobs:         
          runs-on: ubuntu-latest
-steps:
-  - name: 'Checkout codes'
-    uses: actions/checkout@v1
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@v1
 - name: 'step-100000'
   run: bash ./step.sh
