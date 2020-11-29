@@ -2,7 +2,7 @@ name: 'step daily 100000'
 on:
   push:
   schedule:
-    - cron: '30 1 * * *'
+    - cron: '10 0 * * *'
 jobs:
   step100000:
     runs-on: ubuntu-latest
